@@ -1,0 +1,8 @@
+.nav {
+  height: 100%;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  padding: 5px 15px;
+}

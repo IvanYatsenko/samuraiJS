@@ -15,20 +15,3 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.header {
-  grid-area: header;
-  display: flex;
-  background-color: teal;
-}
-.nav {
-  height: 100%;
-  grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  background-color: blueviolet;
-}
-.main {
-  height: 100%;
-  grid-area: main;
-  background-color: violet;
-}

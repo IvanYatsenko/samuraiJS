@@ -1,0 +1,12 @@
+.main {
+  height: 100%;
+  grid-area: main;
+  background-color: violet;
+  padding: 5px 15px;
+}
+
+.backgroundImage {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+}
