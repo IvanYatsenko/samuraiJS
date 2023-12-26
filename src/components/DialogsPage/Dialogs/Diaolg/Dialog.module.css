@@ -1,0 +1,7 @@
+.dialog {
+  display: block;
+  padding: 10px;
+}
+.active {
+  font-weight: 800;
+}

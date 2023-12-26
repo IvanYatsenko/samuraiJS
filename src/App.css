@@ -11,7 +11,7 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 60px 1fr;
   grid-template-areas: 'header header' 'nav main';
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
   max-width: 1200px;
   margin: 0 auto;
 }

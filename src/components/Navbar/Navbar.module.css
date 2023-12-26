@@ -6,3 +6,15 @@
   background-color: blueviolet;
   padding: 5px 15px;
 }
+.link:hover,
+.link:focus,
+.link:visited,
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link.active {
+  color: gold;
+  padding-left: 2px;
+}

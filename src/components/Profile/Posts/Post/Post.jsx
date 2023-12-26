@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Post.module.css'
 import PropTypes from 'prop-types'
 
-const Post = ({ message }) => {
+const Post = ({ message, likesCount }) => {
   return (
     <>
       <div className={classes.item}>
@@ -13,6 +13,7 @@ const Post = ({ message }) => {
           />
         </div>
         <div>{message}</div>
+        <div>Likes: {likesCount}</div>
       </div>
     </>
   )
@@ -20,6 +21,7 @@ const Post = ({ message }) => {
 
 Post.propTypes = {
   message: PropTypes.string.isRequired,
+  likesCount: PropTypes.number.isRequired,
 }
 
 export default Post
