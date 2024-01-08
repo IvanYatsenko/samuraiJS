@@ -3,6 +3,12 @@ import classes from './Posts.module.css'
 import Post from './Post/Post'
 
 const Posts = () => {
+  const postsData = [
+    { id: 1, text: 'Posts 1', likesCount: 0 },
+    { id: 2, text: 'Posts 2', likesCount: 10 },
+    { id: 3, text: 'Posts 3', likesCount: 20 },
+    { id: 4, text: 'Posts 4', likesCount: 30 },
+  ]
   return (
     <div>
       My posts
@@ -12,8 +18,13 @@ const Posts = () => {
       </div>
       <div>New post</div>
       <div className={classes.posts}>
-        <Post message='Hi, how are you?' likesCount={23} />
-        <Post message='It&#8216; s my first post' likesCount={0} />
+        {postsData.map((postData) => (
+          <Post
+            message={postData.text}
+            key={postData.id}
+            likesCount={postData.likesCount}
+          />
+        ))}
       </div>
     </div>
   )
