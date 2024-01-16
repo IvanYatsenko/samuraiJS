@@ -1,20 +1,23 @@
 import React from 'react'
 import classes from './Posts.module.css'
 import Post from './Post/Post'
+import PropTypes from 'prop-types'
+import { addPost } from '../../../redux/state'
 
-const Posts = () => {
-  const postsData = [
-    { id: 1, text: 'Posts 1', likesCount: 0 },
-    { id: 2, text: 'Posts 2', likesCount: 10 },
-    { id: 3, text: 'Posts 3', likesCount: 20 },
-    { id: 4, text: 'Posts 4', likesCount: 30 },
-  ]
+const Posts = ({ postsData }) => {
+  const postTextElement = React.createRef()
+
+  const addPostHandler = () => {
+    addPost(postTextElement.current.value)
+    console.log(postTextElement.current.value)
+  }
+
   return (
     <div>
       My posts
       <div>
-        <textarea></textarea>
-        <button>Add post</button>
+        <textarea ref={postTextElement}></textarea>
+        <button onClick={addPostHandler}>Add post</button>
       </div>
       <div>New post</div>
       <div className={classes.posts}>
@@ -30,3 +33,6 @@ const Posts = () => {
   )
 }
 export default Posts
+Posts.propTypes = {
+  postsData: PropTypes.array,
+}

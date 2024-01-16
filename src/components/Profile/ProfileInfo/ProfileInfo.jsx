@@ -10,7 +10,7 @@ const ProfileInfo = ({ imageUrl }) => {
 }
 
 ProfileInfo.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string,
 }
 
 export default ProfileInfo

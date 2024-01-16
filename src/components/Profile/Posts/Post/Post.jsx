@@ -20,8 +20,8 @@ const Post = ({ message, likesCount }) => {
 }
 
 Post.propTypes = {
-  message: PropTypes.string.isRequired,
-  likesCount: PropTypes.number.isRequired,
+  message: PropTypes.string,
+  likesCount: PropTypes.number,
 }
 
 export default Post

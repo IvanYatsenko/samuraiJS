@@ -1,17 +1,9 @@
 import React from 'react'
 import classes from './Messages.module.css'
 import Message from './Message/Message'
+import PropTypes from 'prop-types'
 
-const Messages = () => {
-  const messagesData = [
-    'Message 1',
-    'Message 2',
-    'Message 3',
-    'Message 4',
-    'Message 5',
-    'Message 6',
-  ]
-
+const Messages = ({ messagesData }) => {
   return (
     <div className={classes.messages}>
       {messagesData.map((messageText, index) => (
@@ -22,3 +14,7 @@ const Messages = () => {
 }
 
 export default Messages
+
+Messages.propTypes = {
+  messagesData: PropTypes.array,
+}

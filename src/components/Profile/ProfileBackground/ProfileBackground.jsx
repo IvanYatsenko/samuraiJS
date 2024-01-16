@@ -10,7 +10,7 @@ const ProfileBackground = ({ imageUrl }) => {
 }
 
 ProfileBackground.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string,
 }
 
 export default ProfileBackground

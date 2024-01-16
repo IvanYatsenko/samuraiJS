@@ -17,8 +17,8 @@ const Dialog = ({ id, name }) => {
 }
 
 Dialog.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
 }
 
 export default Dialog

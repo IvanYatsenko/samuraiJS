@@ -6,8 +6,8 @@ const Message = ({ text }) => {
   return <div className={classes.message}>{text}</div>
 }
 
-Message.propTypes = {
-  text: PropTypes.string.isRequired,
-}
-
 export default Message
+
+Message.propTypes = {
+  text: PropTypes.string,
+}
